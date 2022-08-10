@@ -12,6 +12,9 @@
     />
     <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -31,15 +34,16 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
 rel="stylesheet"
 />
-    <title>Document</title>
+    <title>healthblazepharmacy</title>
   </head>
   <body>
    
     <!--  Header/navbar -->
-    <nav class="navbar navbar-expand-md bg-light">
+    
+    <nav class="navbar navbar-expand-md fixed-top p-md-3 bg-light bg-transparent">
       <div class="container-xxl">
         <a class="navbar-brand" href="#intro">
-          <span class="text-secondary fw-bold">healthblaze</span>
+          <span class="text-success fw-bold">healthblaze</span>
         </a>
         <!-- toggle for mobile -->
         <button
@@ -58,7 +62,7 @@ rel="stylesheet"
             style="--bs-scroll-height: 100px"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#index">Home</a>
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">about us</a>
@@ -80,15 +84,17 @@ rel="stylesheet"
     <!-- end header/nav -->
 
     <!-- section 1: introduction -->
-    <section id="intro" class="bg-image"  style="background-image: url(./assets/img/bg.jpg); height: 80vh;">
+ 
+    <section id="intro" class="bg-image" style="background-image: url(./assets/img/bg.jpg); height: 80vh ">
       <!-- transparent -->
-        <div class="mask">
+        <div class="mask" style=" background-color: rgba(12, 35, 124, 0.4);">
           <!-- end of mask -->
           <div class="d-flex justify-content-center align-items-center h-100"> 
-            <h1 class="text-white mb-0">
-              <div class="display-2 fw-bolder">welcome to</div>
-              <div class="display-4"> healthblaze</div>
-              <a href="#" class="btn btn-success btn-lg">explore more</a>
+            <h1 class="text-white mb-0 content text-center">
+              <div class="display-4 fw-light mb-1">Welcome to</div>
+              <div class="display-6 fw-bold mb-2"> Healthblaze Pharmaceutical</div>
+              <a href="https://wa.me/+2349040205711" class="btn btn-success btn-lg">chat with us</a>
+              <a href="tel:+2349040205711" class="btn btn-success btn-lg">contact us</a>
 
             </h1>
           </div>
@@ -97,102 +103,218 @@ rel="stylesheet"
       
 
     </section>
-    <main id="about">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="container-lg mt-5">
-          <div class="row justify-content-center">
-            <div class="col-md-5 text-center text-md-start">
-                <h1>
-                    <div class="display-2">welcome to</div>
-                    <div class="display-4"> healthblaze</div>
-  
-                </h1>
-                <p class="lead my-4 text-muted">  
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-                <a href="#" class="btn btn-danger btn-lg">click here</a>
-            </div>
-            <div class="col-md-5 col-sm-4 text-center">
-              <img src="./assets/img/fw1_BG.png" alt="" class="img-fluid">
-            </div>
+    <!-- about us -->
+    <section id="about" class="about">
+      <div class="container d-flex justify-content-center align-items-center">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-5 text-center order-2 order-lg-2" >
+            <img src="assets/img/fw1.jpg" class="img-fluid img-thumbnail" alt="">
+          </div>
+          <div class="col-lg-6  pt-lg-0 order-1 order-lg-1" >
+            <h2 class=" fw-bolder text-success text-center">About Us</h2>
+            <h3 class="fw-light"> 
+              Pharmaceutical retail and distribution company majority in sales and dispensing of drugs and healthcare
+              supplement and medical equipments.
+            </h3>
+            <ul class="pt-4 fw-bold">
+              <li class="mb-1"><i class="bi bi-check-circle"></i> Pharmacy</li>
+              <li class="mb-1"><i class="bi bi-check-circle"></i> Medical Equipments</li>
+              <li class="mb-1"><i class="bi bi-check-circle"></i> Laboratories</li>
+              <li class="mb-1"><i class="bi bi-check-circle"></i> Cold Chain</li>
+              <li class="mb-1"><i class="bi bi-check-circle"></i> supplements</li>
+              <li class="mb-1"><i class="bi bi-check-circle"></i> Vaccines</li>
+
+
+
+            </ul>
+            <a href="#" class="btn btn-success read-more mb-4">Read More <i class="bi bi-long-arrow-right"></i></a>
           </div>
         </div>
-      
+
       </div>
-    </main>
+    </section>
+    
+
     <!-- 2nd section -->
-    <section id="services" class="bg-light mt-5">
+    <!-- services -->
+  <section id="services" class="bg-light ">
       <div class="container-lg">
         <div class="text-center">
-          <h2>Lorem, ipsum dolor.</h2>
-          <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+          <h2 class="text-success fw-bolder">Our Services</h2>
+          <p class="lead text-muted"></p>
         </div>
-        <div class="row my-5 text-align justify-content-center">
+        <div class="row my-1 gy-1 text-align justify-content-center">
           <!-- 1 -->
-        <div class="col-8 col-lg-4 col-xl-3">
-          <div class="card">
-            <div class="class-header text-center text-primary">explore</div>
+          <!-- col-8 col-lg-4 col-xl-3 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch " data-mdb-toggle="animation" data-mdb-animation-start="onHover"  data-mdb-animation-reset="true" data-mdb-animation="zoom-in" >
+          <div class="card h-500">
+            <div class="class-header text-center text-primary  pt-3"></div>
             <div class="card body text-center py-3">
-              <h4 class="card-title">Lorem, ipsum.</h4>
-              <p class="lead card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <h4 class="card-title">MEDICATIONS</h4>
+              <p class="lead card-text p-3">We dispense medications, monitor patient health and advise on the selection, dosages, interactions and side effects of medications. </p>
             </div>
           </div>
         </div>
         <!-- 2 -->
-        <div class="col-8 col-lg-4 col-xl-3">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="card">
-            <div class="class-header text-center text-primary">explore</div>
+            <div class="class-header text-center text-primary  pt-3"></div>
             <div class="card body text-center py-3">
-              <h4 class="card-title">Lorem, ipsum.</h4>
-              <p class="lead card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <h4 class="card-title">MEDICAL EQUIPMENTS</h4>
+              <p class="lead card-text p-3">we have right medical equipments and devices for your health care </p>
             </div>
           </div>
         </div>
         <!-- 3 -->
-        <div class="col-8 col-lg-4 col-xl-3">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="card">
-            <div class="class-header text-center text-primary">explore</div>
-          <div class="card body text-center py-3">
-              <h4 class="card-title">Lorem, ipsum.</h4>
-              <p class="lead card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="class-header text-center text-primary pt-3"></div>
+            <div class="card body text-center py-3">
+              <h4 class="card-title">LABORATORIES</h4>
+              <p class="lead card-text p-3">We carry out lab test and diagnostic test to check persons health. </p>
             </div>
           </div>
         </div>
         <!-- 4 -->
-        <div class="col-8 col-lg-4 col-xl-3">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="card">
-            <div class="class-header text-center text-primary">explore</div>
+            <div class="class-header text-center text-primary  pt-3"></div>
             <div class="card body text-center py-3">
-              <h4 class="card-title">Lorem, ipsum.</h4>
-              <p class="lead card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <h4 class="card-title">SUPPLEMENTS</h4>
+              <p class="lead card-text p-3">we recommend and dispense suitable supplements for your health. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <div class="class-header text-center text-primary  pt-3"></div>
+            <div class="card body text-center py-3">
+              <h4 class="card-title">COLD CHAIN</h4>
+              <p class="lead card-text p-3">We maintain and control pharmaceutical products at the right temperature, </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="card">
+            <div class="class-header text-center text-primary  pt-3"></div>
+            <div class="card body text-center py-3">
+              <h4 class="card-title">VACCINES</h4>
+              <p class="lead card-text p-3">we render simple, safe, and effective ways of protecting people against harmful diseases </p>
             </div>
           </div>
         </div>
         </div>
       </div>
-    </section>
+  </section>
 
-   
-    <section id="contact">
+   <!-- contact -->
+   <section id="contact" class="contact section-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="section-title text-center">
+        <h2 class="text-success fw-bolder">Contact</h2>
+        <p>To find out more about healthblaze</p>
+      </div>
+
       <div class="row">
-        <div class=" col-sm-8 col-sm-offset-2">
-          <div class="contact-heading">
-            <h2 class="title-one">
-              Get in touch
-            </h2>
-            <p>we are here to help you</p>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+           <div class="card mb-1 mt-4">
 
+              <div class="info-box mb-4 text-center">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Our Address</h3>
+                <p>No: 184B Ogui Road, China Town Asata Enugu.</p>
+              </div>
+          </div>
+          <div class="card mb-1">
+            <div class="info-box  mb-4 text-center">
+              <i class="bi bi-envelope "></i>
+              <h3>Email Us</h3>
+              <p>Healthblazepharmacy@gmail.com</p>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="info-box  mb-4 text-center">
+              <i class="bi bi-telephone-outbound"></i>
+              <h3>Call Us</h3>
+              <p>+2349040205711</p>
+            </div>
           </div>
         </div>
+        <div class=" mapouter col-lg-6 col-md-6 col-sm-12 col-xs-12 well well-sm">
 
-        <div>
-         
-          <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJV5H6F1GjRBARyUeRCVcPvw8&key=AIzaSyBJ9ZSE-AND72f-JqoWfpwkgNAcE1g_b0U"></iframe>
-         
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5286248267244!2d7.502506514210873!3d6.454498995330445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a35117fa9157%3A0xfbf0f57099147c9!2sHealthblaze%20Pharmacy%20%26%20Stores!5e0!3m2!1sen!2sng!4v1660093786530!5m2!1sen!2sng" allowfullscreen="" loading="lazy"></iframe>
+           
         </div>
       </div>
-    </section>
-<!-- MDB -->
+
+    </div>
+  </section>
+  <!-- end of services -->
+
+   
+    <!-- MDB -->
+
+<!-- footer -->
+<footer id="footer">
+
+  <div class="footer-top p-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3 class="text-success">Healthblaze</h3>
+          <p>
+            No 184B Ogui Road, <br>
+            China Town Asata Enugu<br>
+            Nigeria <br><br>
+            <strong>Phone:</strong> +2349040205711<br>
+            <strong>Email:</strong> Healthblazepharmacy@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#intro">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+           
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Pharmacy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Medical Equipment</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Laboratories</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Supplement</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Cold Chain</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Vaccines</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Our Social Links</h4>
+            <ul class="social-links mt-3">
+              <li><a href="#" class="facebook"><i class="bi bi-facebook pe-2"></i></a>healthblazepharmacy</li>
+              <li><a href="#" class="facebook"><i class="bi bi-instagram pe-2"></i></a>healthblaze pharmacy and stores</li>
+             
+            </ul>
+          </div>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</footer>
 <script
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"
